@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinzil P. Conejos - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+	    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+	    color: white;
+	    padding: 40px;
+	
+	    display: grid;
+	    grid-template-columns: 1fr auto;
+	    grid-template-rows: auto auto;
+	    column-gap: 25px;
+	    align-items: center;
+	}
+	
+	.header-name {
+	    grid-column: 1;
+	    grid-row: 1;
+	}
+	
+	.header-contact {
+	    grid-column: 1;
+	    grid-row: 2;
+	}
+
+	.profile-pic {
+	    grid-column: 2;
+	    grid-row: 1 / span 2; 
+	    width: 2in;
+	    height: 2in;
+	    object-fit: cover;
+	    border-radius: 5px;
+	    border: 3px solid white;
+	}
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 8px;
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: #1e3a8a;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #3b82f6;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .objective-text {
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .education-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #1e3a8a;
+        }
+
+        .education-date {
+            font-style: italic;
+            color: #666;
+        }
+
+        .education-degree {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .education-location {
+            color: #666;
+        }
+
+        .skills-category {
+            margin-bottom: 15px;
+        }
+
+        .skills-category strong {
+            color: #1e3a8a;
+            display: inline-block;
+            min-width: 200px;
+        }
+
+        .skills-list {
+            display: inline;
+        }
+
+        .languages {
+            font-size: 1em;
+        }
+
+        .reference-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .reference-name {
+            font-weight: bold;
+            color: #1e3a8a;
+            font-size: 1.1em;
+        }
+
+        .reference-title {
+            font-style: italic;
+            color: #555;
+        }
+
+        .reference-detail {
+            color: #666;
+            margin-left: 0;
+        }
+
+        .reference-relationship {
+            font-style: italic;
+            color: #3b82f6;
+            margin-top: 5px;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+            
+            header {
+                background: #1e3a8a;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            main {
+                padding: 25px;
+            }
+
+            .education-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .skills-category strong {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DINZIL P. CONEJOS</h1>
+            <div class="contact-info">
+                <div>
+                    <a href="tel:+639940642680">+63-994-064-2680</a> | 
+                    <a href="mailto:221052846@usc.edu.ph">221052846@usc.edu.ph</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/dinzil-conejos-1bb37229b" target="_blank">
+                        🔗 dinzil-conejos-1bb37229b
+                    </a> | 
+                    <a href="https://github.com/DinzCon" target="_blank">
+                        💻 DinzCon
+                    </a>
+                </div>
+                <div class="education-location">Minglanilla, Cebu - 6046, Philippines</div>
+            </div>
+
+		<img src="1000006716.jpg" alt="Profile Photo" class="profile-pic">
+	
+        </header>
+
+        <main>
+            <section id="objective">
+                <h2>Objective</h2>
+                <p class="objective-text">
+                    Aspiring Full-Stack Developer seeking opportunities to apply and expand my skills in web and mobile application 
+                    development. Eager to leverage my foundation in computer engineering and proficiency in modern web technologies 
+                    to contribute to innovative projects while gaining hands-on experience in software development.
+                </p>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <div class="education-header">
+                        <span class="education-title">University of San Carlos - Talamban Campus</span>
+                        <span class="education-date">2022 - 2027 (Expected)</span>
+                    </div>
+                    <div class="education-degree">Bachelor of Science in Computer Engineering</div>
+                    <div class="education-location">Cebu City, Philippines</div>
+                    <div style="margin-top: 5px;">Currently pursuing degree with focus on software development and computer systems</div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-category">
+                    <strong>Programming Languages:</strong>
+                    <span class="skills-list">Python, JavaScript, Java, C++</span>
+                </div>
+                <div class="skills-category">
+                    <strong>Web Technologies:</strong>
+                    <span class="skills-list">HTML, CSS, React, Node.js</span>
+                </div>
+                <div class="skills-category">
+                    <strong>Database Systems:</strong>
+                    <span class="skills-list">MySQL, MongoDB</span>
+                </div>
+                <div class="skills-category">
+                    <strong>Frameworks:</strong>
+                    <span class="skills-list">Django</span>
+                </div>
+                <div class="skills-category">
+                    <strong>Tools & Version Control:</strong>
+                    <span class="skills-list">Git, VS Code</span>
+                </div>
+            </section>
+
+            <section id="additional-info">
+                <h2>Additional Information</h2>
+                <div class="languages">
+                    <strong>Languages:</strong> English (Fluent), Tagalog (Fluent), Cebuano (Fluent)
+                </div>
+            </section>
+
+            <section id="references">
+                <h2>References</h2>
+                <div class="reference-item">
+                    <div class="reference-name">1. Prof. Blasminda C. Mayol</div>
+                    <div class="reference-title">Full-time Professor</div>
+                    <div class="reference-detail">Department of Computer Engineering</div>
+                    <div class="reference-detail">University of San Carlos</div>
+                    <div class="reference-relationship">Relationship: Research Advisor</div>
+                </div>
+                <div class="reference-item">
+                    <div class="reference-name">2. Prof. Jade C. Lobrigas</div>
+                    <div class="reference-title">Part-time Professor</div>
+                    <div class="reference-detail">Department of Computer Engineering</div>
+                    <div class="reference-detail">University of San Carlos</div>
+                    <div class="reference-detail">Phone: +63-976-350-6134</div>
+                    <div class="reference-relationship">Relationship: Research Co-Advisor</div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
