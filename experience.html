@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dinzil P. Conejos - Work Experience</title>
+
+</head>
+
+<body>
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <img id="profilePic" src="1000006716.jpg" class="profile-img" alt="Profile Photo" tabindex="0">
+
+        <h3>LINKS</h3>
+        <p>🌐 <a class="sidebar-link" href="https://github.com/DinzCon" target="_blank" rel="noopener">GitHub</a></p>
+        <p>🔗 <a class="sidebar-link" href="https://linkedin.com/in/dinzil-conejos-1bb37229b" target="_blank" rel="noopener">LinkedIn</a></p>
+
+        <h3>CONTACT</h3>
+        <p>📞 <a class="sidebar-link" href="tel:+639940642680">+63-994-064-2680</a></p>
+        <p>✉️ <a class="sidebar-link" href="mailto:221052846@usc.edu.ph">221052846@usc.edu.ph</a></p>
+        <p>📍 Minglanilla, Cebu</p>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+        <div class="header-name">WORK EXPERIENCE</div>
+        <div class="header-title">Dinzil P. Conejos • Simple experience overview</div>
+
+        <div class="top-actions">
+            <a class="btn" href="index.html">← Back to CV</a>
+        </div>
+
+        <div class="section">
+            <h2>EXPERIENCE</h2>
+
+            <div class="work-item">
+                <h4>AI & Software Engineering Intern — TechNova Solutions</h4>
+                <div class="work-meta">June 2024 – Present</div>
+                <ul>
+                    <li>Developed AI-powered FAQ chatbot using NLP techniques and API integrations.</li>
+                    <li>Implemented prompt engineering and token-optimized responses for faster performance.</li>
+                    <li>Built full-stack dashboard to monitor chatbot analytics and user interactions.</li>
+                    <li>Collaborated with cross-functional teams to deploy scalable web applications.</li>
+                </ul>
+            </div>
+
+            <div class="work-item">
+                <h4>Firmware & Embedded Systems Developer — SmartHome Lab (University Project)</h4>
+                <div class="work-meta">Jan 2024 – May 2024</div>
+                <ul>
+                    <li>Programmed microcontrollers (ESP32/Arduino) for IoT-based home automation systems.</li>
+                    <li>Implemented sensor data acquisition and real-time device control via mobile apps.</li>
+                    <li>Optimized firmware memory usage and reduced latency for wireless communication.</li>
+                    <li>Integrated MQTT protocols and REST APIs for cloud-connected embedded devices.</li>
+                </ul>
+            </div>
+
+            <div class="work-item">
+                <h4>Full-Stack Developer — Freelance / Academic Projects</h4>
+                <div class="work-meta">2023 – Present</div>
+                <ul>
+                    <li>Designed and developed scalable web and mobile applications using clean architecture.</li>
+                    <li>Created appointment scheduling system with AI chatbot and calendar integration.</li>
+                    <li>Built rent management automation platform with role-based access and notifications.</li>
+                    <li>Worked with databases (MySQL, MongoDB) and RESTful API services.</li>
+                </ul>
+            </div>
+
+            <div class="work-item">
+                <h4>Machine Learning Research Assistant — University of San Carlos</h4>
+                <div class="work-meta">2023 – 2024</div>
+                <ul>
+                    <li>Conducted research on cloud-based AI accounting and decision-support systems.</li>
+                    <li>Trained and evaluated ML models for classification and predictive analytics.</li>
+                    <li>Performed data preprocessing, feature engineering, and model evaluation.</li>
+                    <li>Assisted in writing technical documentation and research summaries.</li>
+                </ul>
+            </div>
+
+            <div class="work-item">
+                <h4>Software Developer — Capstone & Systems Projects</h4>
+                <div class="work-meta">2022 – 2023</div>
+                <ul>
+                    <li>Developed mobile-based rent collection and automated notification system.</li>
+                    <li>Designed modular system architecture following Clean Architecture principles.</li>
+                    <li>Implemented secure authentication, database transactions, and reporting modules.</li>
+                    <li>Collaborated with team using Git version control and agile development workflow.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button id="lightboxClose" class="lightbox-close" aria-label="Close photo">✕</button>
+  <img id="lightboxImg" src="" alt="Zoomed Profile Photo">
+</div>
+
+<script>
+  const profilePic = document.getElementById("profilePic");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+  const lightboxClose = document.getElementById("lightboxClose");
+
+  function openLightbox() {
+    lightboxImg.src = profilePic.src;
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden"; // stop background scroll
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+    lightboxImg.src = "";
+    document.body.style.overflow = "";
+  }
+
+  // Open by click or Enter key
+  profilePic.addEventListener("click", openLightbox);
+  profilePic.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") openLightbox();
+  });
+
+  // Close by X button, clicking outside image, or ESC key
+  lightboxClose.addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
+  });
+</script>
+
+</body>
+</html>

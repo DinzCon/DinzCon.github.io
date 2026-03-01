@@ -1,329 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinzil P. Conejos - CV</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dinzil P. Conejos - CV</title>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-            background-color: white;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
-
-        header {
-	    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-	    color: white;
-	    padding: 40px;
-	
-	    display: grid;
-	    grid-template-columns: 1fr auto;
-	    grid-template-rows: auto auto;
-	    column-gap: 25px;
-	    align-items: center;
-	}
-	
-	.header-name {
-	    grid-column: 1;
-	    grid-row: 1;
-	}
-	
-	.header-contact {
-	    grid-column: 1;
-	    grid-row: 2;
-	}
-
-	.profile-pic {
-	    grid-column: 2;
-	    grid-row: 1 / span 2; 
-	    width: 2in;
-	    height: 2in;
-	    object-fit: cover;
-	    border-radius: 5px;
-	    border: 3px solid white;
-	}
-
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-            letter-spacing: 2px;
-        }
-
-        .contact-info {
-            margin-top: 15px;
-            font-size: 0.95em;
-        }
-
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .social-links {
-            margin-top: 10px;
-        }
-
-        .social-links a {
-            display: inline-block;
-            margin: 0 8px;
-            color: white;
-            text-decoration: none;
-        }
-
-        main {
-            padding: 40px;
-        }
-
-        section {
-            margin-bottom: 35px;
-        }
-
-        h2 {
-            color: #1e3a8a;
-            font-size: 1.5em;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom: 3px solid #3b82f6;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .objective-text {
-            text-align: justify;
-            line-height: 1.8;
-        }
-
-        .education-item {
-            margin-bottom: 20px;
-        }
-
-        .education-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 5px;
-        }
-
-        .education-title {
-            font-weight: bold;
-            font-size: 1.1em;
-            color: #1e3a8a;
-        }
-
-        .education-date {
-            font-style: italic;
-            color: #666;
-        }
-
-        .education-degree {
-            font-style: italic;
-            color: #555;
-            margin-bottom: 5px;
-        }
-
-        .education-location {
-            color: #666;
-        }
-
-        .skills-category {
-            margin-bottom: 15px;
-        }
-
-        .skills-category strong {
-            color: #1e3a8a;
-            display: inline-block;
-            min-width: 200px;
-        }
-
-        .skills-list {
-            display: inline;
-        }
-
-        .languages {
-            font-size: 1em;
-        }
-
-        .reference-item {
-            margin-bottom: 20px;
-            padding-left: 20px;
-        }
-
-        .reference-name {
-            font-weight: bold;
-            color: #1e3a8a;
-            font-size: 1.1em;
-        }
-
-        .reference-title {
-            font-style: italic;
-            color: #555;
-        }
-
-        .reference-detail {
-            color: #666;
-            margin-left: 0;
-        }
-
-        .reference-relationship {
-            font-style: italic;
-            color: #3b82f6;
-            margin-top: 5px;
-        }
-
-        @media print {
-            body {
-                background-color: white;
-                padding: 0;
-            }
-            
-            .container {
-                box-shadow: none;
-                max-width: 100%;
-            }
-            
-            header {
-                background: #1e3a8a;
-            }
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-
-            main {
-                padding: 25px;
-            }
-
-            .education-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .skills-category strong {
-                display: block;
-                margin-bottom: 5px;
-            }
-        }
-    </style>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>DINZIL P. CONEJOS</h1>
-            <div class="contact-info">
-                <div>
-                    <a href="tel:+639940642680">+63-994-064-2680</a> | 
-                    <a href="mailto:221052846@usc.edu.ph">221052846@usc.edu.ph</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/dinzil-conejos-1bb37229b" target="_blank">
-                        🔗 dinzil-conejos-1bb37229b
-                    </a> | 
-                    <a href="https://github.com/DinzCon" target="_blank">
-                        💻 DinzCon
-                    </a>
-                </div>
-                <div class="education-location">Minglanilla, Cebu - 6046, Philippines</div>
+
+<div class="container">
+
+    <!-- LEFT SIDEBAR -->
+    <div class="sidebar">
+        <img id="profilePic" src="1000006716.jpg" class="profile-img" alt="Profile Photo" tabindex="0">
+
+        <h3>CONTACT</h3>
+        <p>📞 <a class="sidebar-link" href="tel:+639940642680">+63-994-064-2680</a></p>
+        <p>✉️ <a class="sidebar-link" href="mailto:221052846@usc.edu.ph">221052846@usc.edu.ph</a></p>
+        <p>📍 Minglanilla, Cebu</p>
+        <p>🌐 <a class="sidebar-link" href="https://github.com/DinzCon" target="_blank" rel="noopener">github.com/DinzCon</a></p>
+        <p>🔗 <a class="sidebar-link" href="https://linkedin.com/in/dinzil-conejos-1bb37229b" target="_blank" rel="noopener">linkedin.com/in/dinzil-conejos-1bb37229b</a></p>
+
+        <h3>EDUCATION</h3>
+        <p><strong>University of San Carlos</strong></p>
+        <p>B.S. Computer Engineering</p>
+        <p>2022 - 2027</p>
+
+        <h3>SKILLS</h3>
+        <ul>
+            <li>Full-Stack Development</li>
+            <li>Flutter & Web Apps</li>
+            <li>Database Design</li>
+            <li>Clean Architecture</li>
+            <li>API Integration</li>
+        </ul>
+
+        <h3>LANGUAGES</h3>
+        <ul>
+            <li>English (Fluent)</li>
+            <li>Tagalog (Fluent)</li>
+            <li>Cebuano (Fluent)</li>
+        </ul>
+    </div>
+
+    <!-- RIGHT MAIN CONTENT -->
+    <div class="main">
+        <div class="header-name">DINZIL P. CONEJOS</div>
+        <div class="header-title">Software Engineer</div>
+
+        <div class="section">
+            <h2>PROFILE</h2>
+            <p>
+                Aspiring full-stack developer passionate about building scalable web and mobile applications.
+                Experienced in Flutter, database systems, and clean architecture. Seeking opportunities to
+                apply technical and problem-solving skills in real-world software development projects.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2><a class="section-link" href="experience.html">WORK EXPERIENCE</a></h2>
+
+            <div class="work-item">
+                <h4>Freelance Developer <span>2024 - Present</span></h4>
+                <ul>
+                    <li>Developed responsive web and mobile applications for academic and small business use.</li>
+                    <li>Implemented REST API integrations and database-driven systems.</li>
+                    <li>Applied clean architecture principles for scalable and maintainable codebases.</li>
+                </ul>
             </div>
 
-		<img src="1000006716.jpg" alt="Profile Photo" class="profile-pic">
-	
-        </header>
+            <div class="work-item">
+                <h4>Academic Projects <span>2022 - 2024</span></h4>
+                <ul>
+                    <li>Built appointment scheduling systems with AI chatbot integration.</li>
+                    <li>Designed rent management automation platform for residential properties.</li>
+                    <li>Developed cloud-based and database-driven software solutions.</li>
+                </ul>
+            </div>
+        </div>
 
-        <main>
-            <section id="objective">
-                <h2>Objective</h2>
-                <p class="objective-text">
-                    Aspiring Full-Stack Developer seeking opportunities to apply and expand my skills in web and mobile application 
-                    development. Eager to leverage my foundation in computer engineering and proficiency in modern web technologies 
-                    to contribute to innovative projects while gaining hands-on experience in software development.
-                </p>
-            </section>
+        <div class="section">
+            <h2>REFERENCES</h2>
+            <p><strong>Prof. Blasminda C. Mayol</strong> – Research Advisor</p>
+            <p><strong>Prof. Jade C. Lobrigas</strong> – Co-Advisor</p>
+        </div>
 
-            <section id="education">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <div class="education-header">
-                        <span class="education-title">University of San Carlos - Talamban Campus</span>
-                        <span class="education-date">2022 - 2027 (Expected)</span>
-                    </div>
-                    <div class="education-degree">Bachelor of Science in Computer Engineering</div>
-                    <div class="education-location">Cebu City, Philippines</div>
-                    <div style="margin-top: 5px;">Currently pursuing degree with focus on software development and computer systems</div>
-                </div>
-            </section>
-
-            <section id="skills">
-                <h2>Skills</h2>
-                <div class="skills-category">
-                    <strong>Programming Languages:</strong>
-                    <span class="skills-list">Python, JavaScript, Java, C++</span>
-                </div>
-                <div class="skills-category">
-                    <strong>Web Technologies:</strong>
-                    <span class="skills-list">HTML, CSS, React, Node.js</span>
-                </div>
-                <div class="skills-category">
-                    <strong>Database Systems:</strong>
-                    <span class="skills-list">MySQL, MongoDB</span>
-                </div>
-                <div class="skills-category">
-                    <strong>Frameworks:</strong>
-                    <span class="skills-list">Django, Flutter</span>
-                </div>
-                <div class="skills-category">
-                    <strong>Tools & Version Control:</strong>
-                    <span class="skills-list">Git, VS Code</span>
-                </div>
-            </section>
-
-            <section id="additional-info">
-                <h2>Additional Information</h2>
-                <div class="languages">
-                    <strong>Languages:</strong> English (Fluent), Tagalog (Fluent), Cebuano (Fluent)
-                </div>
-            </section>
-
-            <section id="references">
-                <h2>References</h2>
-                <div class="reference-item">
-                    <div class="reference-name">1. Prof. Blasminda C. Mayol</div>
-                    <div class="reference-title">Full-time Professor</div>
-                    <div class="reference-detail">Department of Computer Engineering</div>
-                    <div class="reference-detail">University of San Carlos</div>
-                    <div class="reference-relationship">Relationship: Research Advisor</div>
-                </div>
-                <div class="reference-item">
-                    <div class="reference-name">2. Prof. Jade C. Lobrigas</div>
-                    <div class="reference-title">Part-time Professor</div>
-                    <div class="reference-detail">Department of Computer Engineering</div>
-                    <div class="reference-detail">University of San Carlos</div>
-                    <div class="reference-detail">Phone: +63-976-350-6134</div>
-                    <div class="reference-relationship">Relationship: Research Co-Advisor</div>
-                </div>
-            </section>
-        </main>
     </div>
+</div>
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button id="lightboxClose" class="lightbox-close" aria-label="Close photo">✕</button>
+  <img id="lightboxImg" src="" alt="Zoomed Profile Photo">
+</div>
+
+<script>
+  const profilePic = document.getElementById("profilePic");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+  const lightboxClose = document.getElementById("lightboxClose");
+
+  function openLightbox() {
+    lightboxImg.src = profilePic.src;
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden"; // stop background scroll
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+    lightboxImg.src = "";
+    document.body.style.overflow = "";
+  }
+
+  // Open by click or Enter key
+  profilePic.addEventListener("click", openLightbox);
+  profilePic.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") openLightbox();
+  });
+
+  // Close by X button, clicking outside image, or ESC key
+  lightboxClose.addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
+  });
+</script>
+
 </body>
 </html>
