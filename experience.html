@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Dinzil P. Conejos - Work Experience</title>
@@ -15,27 +19,45 @@
     <div class="sidebar">
         <img id="profilePic" src="1000006716.jpg" class="profile-img" alt="Profile Photo" tabindex="0">
 
-        <h3>LINKS</h3>
-        <p>🌐 <a class="sidebar-link" href="https://github.com/DinzCon" target="_blank" rel="noopener">GitHub</a></p>
-        <p>🔗 <a class="sidebar-link" href="https://linkedin.com/in/dinzil-conejos-1bb37229b" target="_blank" rel="noopener">LinkedIn</a></p>
+        <div class="sidebar-section">
+            <h3><span class="sidebar-nav-link">Contact</span></h3>
+            <div class="sidebar-group">
+                <div class="sidebar-item"><span class="sidebar-icon"></span><a class="sidebar-link" href="tel:+639940642680">+63-994-064-2680</a></div>
+                <div class="sidebar-item"><span class="sidebar-icon"></span><a class="sidebar-link" href="mailto:221052846@usc.edu.ph">221052846@usc.edu.ph</a></div>
+                <div class="sidebar-item"><span class="sidebar-icon"></span>Minglanilla, Cebu</div>
+            </div>
+        </div>
 
-        <h3>CONTACT</h3>
-        <p>📞 <a class="sidebar-link" href="tel:+639940642680">+63-994-064-2680</a></p>
-        <p>✉️ <a class="sidebar-link" href="mailto:221052846@usc.edu.ph">221052846@usc.edu.ph</a></p>
-        <p>📍 Minglanilla, Cebu</p>
+        <div class="sidebar-section">
+            <h3><span class="sidebar-nav-link">Links</span></h3>
+            <div class="sidebar-group">
+                <div class="sidebar-item"><span class="sidebar-icon"></span><a class="sidebar-link" href="https://github.com/DinzCon" target="_blank" rel="noopener">github.com/DinzCon</a></div>
+                <div class="sidebar-item"><span class="sidebar-icon"></span><a class="sidebar-link" href="https://linkedin.com/in/dinzil-conejos-1bb37229b" target="_blank" rel="noopener">linkedin.com/in/dinzil-conejos</a></div>
+            </div>
+        </div>
+
+        <div class="sidebar-section">
+            <h3><span class="sidebar-nav-link">Education</span></h3>
+            <div class="sidebar-group">
+                <div class="sidebar-edu-institution">University of San Carlos</div>
+                <div class="sidebar-edu-degree">B.S. Computer Engineering</div>
+                <div class="sidebar-edu-year">2022 – 2027</div>
+            </div>
+        </div>
     </div>
 
     <!-- MAIN -->
     <div class="main">
-        <div class="header-name">WORK EXPERIENCE</div>
+        <div class="header-name">Work Experience</div>
+        <div class="header-rule"></div>
         <div class="header-title">Dinzil P. Conejos • Simple experience overview</div>
 
         <div class="top-actions">
-            <a class="btn" href="index.html">← Back to CV</a>
+            <a class="sidebar-btn" href="index.html">← Back to CV</a>
         </div>
 
         <div class="section">
-            <h2>EXPERIENCE</h2>
+            <h2>Experience</h2>
 
             <div class="work-item">
                 <h4>AI & Software Engineering Intern — TechNova Solutions</h4>
@@ -100,42 +122,6 @@
   <button id="lightboxClose" class="lightbox-close" aria-label="Close photo">✕</button>
   <img id="lightboxImg" src="" alt="Zoomed Profile Photo">
 </div>
-
-<script>
-  const profilePic = document.getElementById("profilePic");
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightboxImg");
-  const lightboxClose = document.getElementById("lightboxClose");
-
-  function openLightbox() {
-    lightboxImg.src = profilePic.src;
-    lightbox.classList.add("open");
-    lightbox.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden"; // stop background scroll
-  }
-
-  function closeLightbox() {
-    lightbox.classList.remove("open");
-    lightbox.setAttribute("aria-hidden", "true");
-    lightboxImg.src = "";
-    document.body.style.overflow = "";
-  }
-
-  // Open by click or Enter key
-  profilePic.addEventListener("click", openLightbox);
-  profilePic.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") openLightbox();
-  });
-
-  // Close by X button, clicking outside image, or ESC key
-  lightboxClose.addEventListener("click", closeLightbox);
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) closeLightbox();
-  });
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
-  });
-</script>
 
 </body>
 </html>

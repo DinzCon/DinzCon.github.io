@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dinzil P. Conejos - CV</title>
@@ -16,42 +20,67 @@
     <div class="sidebar">
         <img id="profilePic" src="1000006716.jpg" class="profile-img" alt="Profile Photo" tabindex="0">
 
-        <h3>CONTACT</h3>
-        <p>📞 <a class="sidebar-link" href="tel:+639940642680">+63-994-064-2680</a></p>
-        <p>✉️ <a class="sidebar-link" href="mailto:221052846@usc.edu.ph">221052846@usc.edu.ph</a></p>
-        <p>📍 Minglanilla, Cebu</p>
-        <p>🌐 <a class="sidebar-link" href="https://github.com/DinzCon" target="_blank" rel="noopener">github.com/DinzCon</a></p>
-        <p>🔗 <a class="sidebar-link" href="https://linkedin.com/in/dinzil-conejos-1bb37229b" target="_blank" rel="noopener">linkedin.com/in/dinzil-conejos-1bb37229b</a></p>
+        <div class="sidebar-section">
+            <h3 id="contact"><a href="#contact" class="nav-link sidebar-nav-link">Contact</a></h3>
+            <div class="sidebar-group">
+                <div class="sidebar-item"><span class="sidebar-icon"></span><a class="sidebar-link" href="tel:+639940642680">+63-994-064-2680</a></div>
+                <div class="sidebar-item"><span class="sidebar-icon"></span><a class="sidebar-link" href="mailto:221052846@usc.edu.ph">221052846@usc.edu.ph</a></div>
+                <div class="sidebar-item"><span class="sidebar-icon"></span>Minglanilla, Cebu</div>
+                <div class="sidebar-item"><span class="sidebar-icon"></span><a class="sidebar-link" href="https://github.com/DinzCon" target="_blank" rel="noopener">github.com/DinzCon</a></div>
+                <div class="sidebar-item"><span class="sidebar-icon"></span><a class="sidebar-link" href="https://linkedin.com/in/dinzil-conejos-1bb37229b" target="_blank" rel="noopener">linkedin.com/in/dinzil-conejos</a></div>
+            </div>
+        </div>
 
-        <h3>EDUCATION</h3>
-        <p><strong>University of San Carlos</strong></p>
-        <p>B.S. Computer Engineering</p>
-        <p>2022 - 2027</p>
+        <div class="sidebar-section">
+            <h3 id="education"><a href="#education" class="nav-link sidebar-nav-link">Education</a></h3>
+            <div class="sidebar-group">
+                <div class="sidebar-edu-institution">University of San Carlos</div>
+                <div class="sidebar-edu-degree">B.S. Computer Engineering</div>
+                <div class="sidebar-edu-year">2022 – 2027</div>
+            </div>
+        </div>
 
-        <h3>SKILLS</h3>
-        <ul>
-            <li>Full-Stack Development</li>
-            <li>Flutter & Web Apps</li>
-            <li>Database Design</li>
-            <li>Clean Architecture</li>
-            <li>API Integration</li>
-        </ul>
+        <div class="sidebar-section">
+            <h3 id="skills"><a href="#skills" class="nav-link sidebar-nav-link">Skills</a></h3>
+            <div class="sidebar-group">
+                <ul>
+                    <li>Full-Stack Development</li>
+                    <li>Flutter &amp; Web Apps</li>
+                    <li>Database Design</li>
+                    <li>Clean Architecture</li>
+                    <li>API Integration</li>
+                </ul>
+            </div>
+        </div>
 
-        <h3>LANGUAGES</h3>
-        <ul>
-            <li>English (Fluent)</li>
-            <li>Tagalog (Fluent)</li>
-            <li>Cebuano (Fluent)</li>
-        </ul>
+        <div class="sidebar-section">
+            <h3 id="languages"><a href="#languages" class="nav-link sidebar-nav-link">Languages</a></h3>
+            <div class="sidebar-group">
+                <ul>
+                    <li>English <span class="sidebar-lang-level">Fluent</span></li>
+                    <li>Tagalog <span class="sidebar-lang-level">Fluent</span></li>
+                    <li>Cebuano <span class="sidebar-lang-level">Fluent</span></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <!-- RIGHT MAIN CONTENT -->
     <div class="main">
-        <div class="header-name">DINZIL P. CONEJOS</div>
-        <div class="header-title">Software Engineer</div>
+        <div class="header-block">
+            <div>
+                <div class="header-name">Dinzil P. Conejos</div>
+                <div class="header-rule"></div>
+                <div class="header-title">Software Engineer</div>
+            </div>
+            <button class="view-cv-btn" id="viewCvBtn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                View CV
+            </button>
+        </div>
 
-        <div class="section">
-            <h2>PROFILE</h2>
+        <div class="section" id="profile">
+            <h2>Profile</h2>
             <p>
                 Aspiring full-stack developer passionate about building scalable web and mobile applications.
                 Experienced in Flutter, database systems, and clean architecture. Seeking opportunities to
@@ -59,11 +88,12 @@
             </p>
         </div>
 
-        <div class="section">
-            <h2><a class="section-link" href="experience.html">WORK EXPERIENCE</a></h2>
+        <div class="section" id="experience">
+            <h2>Work Experience</h2>
 
             <div class="work-item">
-                <h4>Freelance Developer <span>2024 - Present</span></h4>
+                <h4>Freelance Developer</h4>
+                <div class="work-meta">2024 – Present</div>
                 <ul>
                     <li>Developed responsive web and mobile applications for academic and small business use.</li>
                     <li>Implemented REST API integrations and database-driven systems.</li>
@@ -72,17 +102,20 @@
             </div>
 
             <div class="work-item">
-                <h4>Academic Projects <span>2022 - 2024</span></h4>
+                <h4>Academic Projects</h4>
+                <div class="work-meta">2022 – 2024</div>
                 <ul>
                     <li>Built appointment scheduling systems with AI chatbot integration.</li>
                     <li>Designed rent management automation platform for residential properties.</li>
                     <li>Developed cloud-based and database-driven software solutions.</li>
                 </ul>
             </div>
+
+            <a href="experience.html" class="sidebar-btn">View Full Experience</a>
         </div>
 
-        <div class="section">
-            <h2>REFERENCES</h2>
+        <div class="section" id="references">
+            <h2>References</h2>
             <p><strong>Prof. Blasminda C. Mayol</strong> – Research Advisor</p>
             <p><strong>Prof. Jade C. Lobrigas</strong> – Co-Advisor</p>
         </div>
@@ -90,46 +123,28 @@
     </div>
 </div>
 
+<!-- PDF PREVIEW MODAL -->
+<div id="pdfModal" class="pdf-modal" aria-hidden="true">
+  <div class="pdf-modal-backdrop" id="pdfModalBackdrop"></div>
+  <div class="pdf-modal-box">
+    <div class="pdf-modal-header">
+      <span class="pdf-modal-title">Dinzil P. Conejos — CV</span>
+      <div class="pdf-modal-actions">
+        <a class="pdf-download-btn" href="Dinzil_Conejos_Professional_CV.pdf" download="Dinzil_Conejos_Professional_CV.pdf">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download
+        </a>
+        <button class="pdf-modal-close" id="pdfModalClose" aria-label="Close preview">✕</button>
+      </div>
+    </div>
+    <iframe class="pdf-iframe" id="pdfIframe" src="" title="CV Preview"></iframe>
+  </div>
+</div>
+
 <div id="lightbox" class="lightbox" aria-hidden="true">
   <button id="lightboxClose" class="lightbox-close" aria-label="Close photo">✕</button>
   <img id="lightboxImg" src="" alt="Zoomed Profile Photo">
 </div>
-
-<script>
-  const profilePic = document.getElementById("profilePic");
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightboxImg");
-  const lightboxClose = document.getElementById("lightboxClose");
-
-  function openLightbox() {
-    lightboxImg.src = profilePic.src;
-    lightbox.classList.add("open");
-    lightbox.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden"; // stop background scroll
-  }
-
-  function closeLightbox() {
-    lightbox.classList.remove("open");
-    lightbox.setAttribute("aria-hidden", "true");
-    lightboxImg.src = "";
-    document.body.style.overflow = "";
-  }
-
-  // Open by click or Enter key
-  profilePic.addEventListener("click", openLightbox);
-  profilePic.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") openLightbox();
-  });
-
-  // Close by X button, clicking outside image, or ESC key
-  lightboxClose.addEventListener("click", closeLightbox);
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) closeLightbox();
-  });
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
-  });
-</script>
 
 </body>
 </html>
